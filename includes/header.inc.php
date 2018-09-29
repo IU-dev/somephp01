@@ -22,8 +22,14 @@
               <a class="nav-link" href="competitions.php">Соревнования</a>
             </li>
           </ul>
-          <a class="btn btn-outline-success my-2 my-sm-0" type="button" href="login.php">Вход</a>
-		  <a class="btn btn-outline-info my-2 my-sm-0" type="button" href="register.php">Регистрация</a>
+		  <?php $user = unserialize($_SESSION['user']); ?>
+		<?php if(isset($_SESSION['logged_in'])) : ?>
+			<a class="btn btn-outline-success my-2 my-sm-0" type="button" href="settings.php">Аккаунт</a>
+		  	<a class="btn btn-outline-info my-2 my-sm-0" type="button" href="logout.php">Выход</a>
+		<?php else : ?>
+			 <a class="btn btn-outline-success my-2 my-sm-0" type="button" href="login.php">Вход</a>
+		  	<a class="btn btn-outline-info my-2 my-sm-0" type="button" href="register.php">Регистрация</a>
+		<?php endif; ?>
           </form>
         </div>
       </nav>
