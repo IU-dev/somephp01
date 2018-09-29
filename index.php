@@ -13,7 +13,7 @@ require_once 'includes/global.inc.php';
 Hello, <?php echo $user->username; ?>. You are logged in. <a href="logout.php">Logout</a> 
 | <a href="settings.php">Change Email</a>
 <?php else : ?>
-You are not logged in. <a href="login.php">Log In</a> | <a href="register.php">Register</a>
+You are not logged in, really. <a href="login.php">Log In</a> | <a href="register.php">Register</a>
 <?php endif; ?>
 </body>
 </html>
