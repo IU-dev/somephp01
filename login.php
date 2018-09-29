@@ -1,7 +1,7 @@
 <?php
 //login.php
 require_once 'includes/global.inc.php';
-$page = "login.php"
+$page = "login.php";
 $error = "";
 $username = "";
 $password = "";
