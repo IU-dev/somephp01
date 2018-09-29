@@ -11,6 +11,7 @@ $page = "index.php"
 	<body>
 		<?php require_once 'includes/header.inc.php'; ?>
 		
+		<main role="main">
 		<?php $user = unserialize($_SESSION['user']); ?>
 		
 		<?php if(isset($_SESSION['logged_in'])) : ?>
@@ -18,5 +19,6 @@ $page = "index.php"
 		<?php else : ?>
 			You are not logged in, really. <a href="login.php">Log In</a> | <a href="register.php">Register</a>
 		<?php endif; ?>
+		</main>
 		</body>
 </html>
