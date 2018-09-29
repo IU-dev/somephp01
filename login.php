@@ -35,6 +35,7 @@ $error = "Incorrect username or password. Please try again.";
 		<?php if(isset($_SESSION['logged_in'])) : ?>
 			Вы уже вошли в систему.
 		<?php else : ?>
+			<center>
 			<?php
 			if($error != "")
 			{
@@ -65,6 +66,7 @@ $error = "Incorrect username or password. Please try again.";
 			<br/>
 			</fieldset>
 			</form>
+		</center>
 		<?php endif; ?>
 		</main>
 </body>
