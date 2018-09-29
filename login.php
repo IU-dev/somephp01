@@ -41,12 +41,29 @@ $error = "Incorrect username or password. Please try again.";
 			echo $error."<br/>";
 			}
 			?>
-			<form action="login.php" method="post">
-			Username: <input type="text" name="username" value="<?php echo $username; ?>" 
-			/><br/>
-			Password: <input type="password" name="password" value="<?php echo $password; 
-			?>" /><br/>
-			<input type="submit" value="Login" name="submit-login" />
+			<form class="form-horizontal" action="login.php" method="post">
+			<fieldset>
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="login">Логин</label>  
+			  <div class="col-md-4">
+			  <input id="login" name="username" type="text" placeholder="" class="form-control input-md" required="" value="<?php echo $username; ?>"/> 
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="password">Пароль</label>
+			  <div class="col-md-4">
+			    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="" value="<?php echo $password; ?>"/>
+			  </div>
+			</div>
+			<br/>
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="submit"></label>
+			  <div class="col-md-4">
+			    <button value="Login" id="submit" name="submit-login" class="btn btn-success">Войти</button>
+			  </div>
+			</div>
+			<br/>
+			</fieldset>
 			</form>
 		<?php endif; ?>
 		</main>
