@@ -9,8 +9,9 @@ $page = "index.php"
 </head>
 <body>
 <?php require_once 'includes/header.inc.php'; ?>
-<?php if(isset($_SESSION['logged_in'])) : ?>
+
 <?php $user = unserialize($_SESSION['user']); ?>
+<?php if(isset($_SESSION['logged_in'])) : ?>
 Hello, <?php echo $user->username; ?>. You are logged in. <a href="logout.php">Logout</a> 
 | <a href="settings.php">Change Email</a>
 <?php else : ?>
