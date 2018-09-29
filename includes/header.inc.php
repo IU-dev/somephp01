@@ -14,16 +14,16 @@
             <li class="nav-item <?php echo ($page == "index.php" ? "active" : "");?>">
               <a class="nav-link" href="index.php">Главная</a>
             </li>
-            <li class="nav-item <?php echo ($page == "index.php" ? "active" : "");?>">
+            <li class="nav-item <?php echo ($page == "about.php" ? "active" : "");?>">
               <a class="nav-link" href="about.php">О проекте</a>
             </li>
-            <li class="nav-item <?php echo ($page == "index.php" ? "active" : "");?>">
+            <li class="nav-item <?php echo ($page == "introduction.php" ? "active" : "");?>">
               <a class="nav-link" href="introduction.php">Вступление</a>
             </li>
-			<li class="nav-item <?php echo ($page == "index.php" ? "active" : "");?>">
+			<li class="nav-item <?php echo ($page == "study.php" ? "active" : "");?>">
               <a class="nav-link" href="study.php">Обучение</a>
             </li>
-			<li class="nav-item <?php echo ($page == "index.php" ? "active" : "");?>">
+			<li class="nav-item <?php echo ($page == "competitions.php" ? "active" : "");?>">
               <a class="nav-link" href="competitions.php">Соревнования</a>
             </li>
           </ul>
