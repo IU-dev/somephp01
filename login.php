@@ -33,7 +33,14 @@ $error = "Incorrect username or password. Please try again.";
 		<?php $user = unserialize($_SESSION['user']); ?>
 		
 		<?php if(isset($_SESSION['logged_in'])) : ?>
-			Вы уже вошли в систему.
+			<div class="alert alert-danger" role="alert">
+				  <strong>Ошибка безопасности #001</strong><br>
+				  <p>Вы уже вошли в систему.</p>
+				  <hr>
+				  <small>
+ 				 <p class="mb-0">There was login.php GET request when $_SESSION is active.<br>
+				 Был совершен GET запрос на страницу входа (login.php) с активной сессией $_SESSION.</p></small>
+				</div>
 		<?php else : ?>
 			<center>
 			<?php
