@@ -6,9 +6,10 @@ $page = "index.php"
 <html>
 	<head>
 		<title>Главная | ШАРП</title>
+		<?php require_once 'includes/bootstrap.inc.php'; ?>
 	</head>
 	<body>
-		<header><?php require_once 'includes/header.inc.php'; ?></header>
+		<?php require_once 'includes/header.inc.php'; ?>
 		
 		<?php $user = unserialize($_SESSION['user']); ?>
 		
